@@ -17,7 +17,7 @@ import java.sql.SQLException;
  * @Date: 2019/11/23
  * @Time: 10:40
  */
-public class DBUtil4 {
+public class DBUtil4Update {
     //本机的IP：127.0.0.1-----localhost == 127.0.0.1
     private static final String URL = "jdbc:mysql://localhost:3306/test";
     private static final String USERNAME = "root";
@@ -34,8 +34,10 @@ public class DBUtil4 {
             connection = ds.getConnection();
             System.out.println(connection);
             //?-->表示占位符
-            String sql = "update exam_result set name = ?,chinese = ?,math = ?, english = ? where id = ?";
-            statement = connection.prepareStatement(sql);
+            //修改数据
+            String sqlUpdate = "update exam_result set " +
+                    "name = ?,chinese = ?,math = ?, english = ? where id = ?";
+            statement = connection.prepareStatement(sqlUpdate);
             statement.setString(1, "SY");//第一个占位符，第1条数据.
             statement.setBigDecimal(2, new BigDecimal(91));
             statement.setBigDecimal(3, new BigDecimal(92));
