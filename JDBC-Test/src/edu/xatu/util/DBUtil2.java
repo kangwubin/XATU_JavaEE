@@ -26,6 +26,7 @@ public class DBUtil2 {
         ResultSet resultSet = null;
         PreparedStatement statement = null;
         try {
+            //1.连接数据库，通过DataSource（数据源）对象获取.
             DataSource ds = new MysqlDataSource();
             ((MysqlDataSource) ds).setURL(URL);
             ((MysqlDataSource) ds).setUser(USERNAME);
@@ -33,11 +34,14 @@ public class DBUtil2 {
             connection = ds.getConnection();
             System.out.println(connection);
             //?-->表示占位符
+            //2.创建操作命令.
             String sql = "select id,name,chinese,math,english " + "from exam_result where id=?";
             statement = connection.prepareStatement(sql);
             statement.setInt(1, 3);//第一个占位符，第三条数据.
             //ResultSet类似List<Map<String,Object>>
+            //3.执行sql语句
             resultSet = statement.executeQuery();
+            //4.处理结果集
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
@@ -53,6 +57,7 @@ public class DBUtil2 {
             e.printStackTrace();
         } finally {
             try {
+                //4.释放资源
                 //释放资源的时候根据创建的时侯的反向释放
                 //关闭结果集
                 if (resultSet != null) {

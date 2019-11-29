@@ -23,13 +23,17 @@ public class DBUtil {
         ResultSet resultSet = null;
         Statement statement = null;
         try {
+            //1.建立数据库连接
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
             System.out.println(connection);
+            //2.创建操作命令
             statement = connection.createStatement();
             String sql = "select id,name,chinese,math,english " + "from exam_result";
+            //3.执行sql语句
             //ResultSet类似List<Map<String,Object>>
             resultSet = statement.executeQuery(sql);
+            //4.处理结果集
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
@@ -47,6 +51,7 @@ public class DBUtil {
             e.printStackTrace();
         } finally {
             try {
+                //4.释放资源
                 //释放资源的时候根据创建的时侯的反向释放
                 //关闭结果集
                 if (resultSet != null) {
