@@ -24,7 +24,8 @@ public class DBUtil {
     private DBUtil() {
     }
 
-    //获取数据源方法
+    //获取数据源方法--单例模式
+    //DataSource--java标准库的sql数据源，为数据库的迁移提供方便。
     public static DataSource getDataSource() {
         if (DATA_SOURCE == null) {
             DATA_SOURCE = new MysqlDataSource();
