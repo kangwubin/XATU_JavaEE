@@ -16,6 +16,8 @@ public class ThreadUnsafe {
             for (int i = 0; i < 50000; i++) {
                 //  synchronized (this)---因为运行的是5个线程，用this表示将锁加给当前的对象.
                 //  synchronized (MyThread.class)
+                /*n++:----1.读n的值；2.修改临时的值(+1)；3.写回n的值；*/
+                //n++;
                 synchronized (ThreadUnsafe.class) {
                     n++;
                 }

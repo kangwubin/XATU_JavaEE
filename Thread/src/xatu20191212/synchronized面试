@@ -1,0 +1,21 @@
+//锁的问题：
+class A{
+    sync method();
+    sync static staticMethod();
+    noSyncMethod();
+    noSyncStaticMethod();
+    sync method2();
+}
+    A p = new A();
+    A q = new A();
+    A s = p;
+
+   AThread                 BThread                               是否产生互斥行为
+   p.method()              p.method()                                √
+   p.method()              s.method()                                √
+   p.method()              p.staticMethod()=A.staticMethod()         ×
+   p.method()              q.method()                                ×
+   p.method()              p.noSyncMethod()                          ×
+   p.method()              p.method2()                               √
+
+   注：是否会产生互斥行为，竞争双方都有请求锁的行为，要确定是不是锁的是同一个对象，跟方法无关。
