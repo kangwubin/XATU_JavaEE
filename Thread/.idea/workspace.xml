@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21446eed-09f6-42b6-95f2-450d6b60f3a2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/xatu20191212/synchronized面试" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xatu20191215/DeadLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xatu20191215/PrintInOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xatu20191215/Singleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xatu20191215/SyncAndState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xatu20191215/SyncTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/xatu20191215/SyncTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xatu20191212/ThreadUnsafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xatu20191212/ThreadUnsafe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xatu20191212/WatchThreadState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xatu20191212/WatchThreadState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/xatu20191212/YieldDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/xatu20191212/YieldDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,48 +19,69 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="YieldDemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xatu20191212/YieldDemo.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SyncTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xatu20191215/SyncTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+            <state relative-caret-position="638">
+              <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+              <folding>
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WatchThreadState1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xatu20191212/WatchThreadState1.java">
+      <file leaf-file-name="SyncTest2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xatu20191215/SyncTest2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="988">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WatchThreadState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xatu20191212/WatchThreadState.java">
+      <file leaf-file-name="SyncAndState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xatu20191215/SyncAndState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+            <state relative-caret-position="260">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadUnsafe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xatu20191212/ThreadUnsafe.java">
+      <file leaf-file-name="DeadLock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xatu20191215/DeadLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="286">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="synchronized面试" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/xatu20191212/synchronized面试">
+      <file leaf-file-name="Singleton.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xatu20191215/Singleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="676">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <folding>
+                <element signature="e#185#186#0" expanded="true" />
+                <element signature="e#212#213#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintInOrder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/xatu20191215/PrintInOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="794">
+              <caret line="78" column="44" lean-forward="true" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -92,6 +115,12 @@
         <option value="$PROJECT_DIR$/src/xatu20191212/YieldDemo.java" />
         <option value="$PROJECT_DIR$/src/xatu20191212/ThreadUnsafe.java" />
         <option value="$PROJECT_DIR$/src/xatu20191212/synchronized面试" />
+        <option value="$PROJECT_DIR$/src/xatu20191215/SyncTest2.java" />
+        <option value="$PROJECT_DIR$/src/xatu20191215/Singleton.java" />
+        <option value="$PROJECT_DIR$/src/xatu20191215/PrintInOrder.java" />
+        <option value="$PROJECT_DIR$/src/xatu20191215/SyncAndState.java" />
+        <option value="$PROJECT_DIR$/src/xatu20191215/SyncTest.java" />
+        <option value="$PROJECT_DIR$/src/xatu20191215/DeadLock.java" />
       </list>
     </option>
   </component>
@@ -112,6 +141,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,29 +159,31 @@
               <item name="Thread" type="b2602c69:ProjectViewProjectNode" />
               <item name="Thread" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="xatu20191212" type="462c0819:PsiDirectoryNode" />
+              <item name="xatu20191215" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/XATU_Bit_JavaSE/LeetCode_Nowcoder" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="xatu20191215" />
       <recent name="xatu20191212" />
       <recent name="XATU20191210" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\XATU_JavaEE\Thread\src\xatu20191215" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -165,58 +198,58 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadUnsafe">
-    <configuration name="ThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="XATU20191210.ThreadDemo" />
+  <component name="RunManager" selected="Application.DeadLock">
+    <configuration name="DeadLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xatu20191215.DeadLock" />
       <module name="Thread" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="XATU20191210.*" />
+          <option name="PATTERN" value="xatu20191215.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="ThreadUnsafe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xatu20191212.ThreadUnsafe" />
+    <configuration name="PrintInOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xatu20191215.PrintInOrder" />
       <module name="Thread" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xatu20191212.*" />
+          <option name="PATTERN" value="xatu20191215.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="WatchThreadState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xatu20191212.WatchThreadState" />
+    <configuration name="Singleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xatu20191215.Singleton" />
       <module name="Thread" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xatu20191212.*" />
+          <option name="PATTERN" value="xatu20191215.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="WatchThreadState1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xatu20191212.WatchThreadState1" />
+    <configuration name="SyncAndState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xatu20191215.SyncAndState" />
       <module name="Thread" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xatu20191212.*" />
+          <option name="PATTERN" value="xatu20191215.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
-    <configuration name="YieldDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="xatu20191212.YieldDemo" />
+    <configuration name="SyncTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="xatu20191215.SyncTest" />
       <module name="Thread" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="xatu20191212.*" />
+          <option name="PATTERN" value="xatu20191215.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -263,19 +296,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.ThreadDemo" />
-      <item itemvalue="Application.WatchThreadState" />
-      <item itemvalue="Application.WatchThreadState1" />
-      <item itemvalue="Application.YieldDemo" />
-      <item itemvalue="Application.ThreadUnsafe" />
+      <item itemvalue="Application.SyncTest" />
+      <item itemvalue="Application.Singleton" />
+      <item itemvalue="Application.PrintInOrder" />
+      <item itemvalue="Application.SyncAndState" />
+      <item itemvalue="Application.DeadLock" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreadUnsafe" />
-        <item itemvalue="Application.YieldDemo" />
-        <item itemvalue="Application.WatchThreadState" />
-        <item itemvalue="Application.WatchThreadState1" />
-        <item itemvalue="Application.ThreadDemo" />
+        <item itemvalue="Application.DeadLock" />
+        <item itemvalue="Application.SyncTest" />
+        <item itemvalue="Application.SyncAndState" />
+        <item itemvalue="Application.PrintInOrder" />
+        <item itemvalue="Application.Singleton" />
       </list>
     </recent_temporary>
   </component>
@@ -296,6 +329,9 @@
       <workItem from="1576113270317" duration="5622000" />
       <workItem from="1576137710669" duration="2339000" />
       <workItem from="1576306714001" duration="6063000" />
+      <workItem from="1576331087623" duration="809000" />
+      <workItem from="1576371821119" duration="10984000" />
+      <workItem from="1576393521606" duration="6855000" />
     </task>
     <task id="LOCAL-00001" summary="1.使用jconsole命令查看系统当前的进程&#10;2.线程当中的方法的使用">
       <created>1576113476815</created>
@@ -311,11 +347,18 @@
       <option name="project" value="LOCAL" />
       <updated>1576137880547</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1.使用jconsole命令查看系统当前的进程&#10;2.线程当中的方法的使用&#10;3.线程状态的转换&#10;4.synchronized锁的应用">
+      <created>1576331145946</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576331145946</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26051000" />
+    <option name="totallyTimeSpent" value="44699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
@@ -329,19 +372,19 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27336124" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29846582" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20911528" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15549597" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -361,7 +404,53 @@
     <MESSAGE value="1.使用jconsole命令查看系统当前的进程&#10;2.线程当中的方法的使用&#10;3.线程状态的转换&#10;4.synchronized锁的应用" />
     <option name="LAST_COMMIT_MESSAGE" value="1.使用jconsole命令查看系统当前的进程&#10;2.线程当中的方法的使用&#10;3.线程状态的转换&#10;4.synchronized锁的应用" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/xatu20191215/SyncTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="48" column="40" lean-forward="true" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191212/YieldDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191212/WatchThreadState1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191212/WatchThreadState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191212/ThreadUnsafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191212/synchronized面试">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/xatu20191212/WatchThreadState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -422,10 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -475,10 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -528,10 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -581,10 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,29 +684,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xatu20191212/WatchThreadState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="806">
           <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xatu20191212/WatchThreadState1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="468">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xatu20191212/YieldDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xatu20191212/ThreadUnsafe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -641,6 +700,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191212/YieldDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="140" column="6" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191212/ThreadUnsafe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191215/Singleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191215/SyncTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191215/SyncAndState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191215/SyncTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+          <folding>
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191215/DeadLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xatu20191215/PrintInOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="78" column="44" lean-forward="true" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
         </state>
       </provider>
     </entry>
