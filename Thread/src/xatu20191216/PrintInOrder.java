@@ -1,36 +1,33 @@
-package xatu20191215;
+package xatu20191216;
 
-/* 面试重点：synchronized(可以保证原子性、可见性、代码重排序性)；
- * volatile(保证可见性、代码重排序性、不会导致线程切换、保证long/double的原子性)；
- * 所谓的保证原子性是保证常量给变量赋值；*/
 public class PrintInOrder {
     private volatile int i = 0;
 
-    public void first() {
-        synchronized (this) {
-            if (i == 0) {
-                System.out.println("one");
-                i = 1;
-            }
+    private synchronized void first() throws InterruptedException {
+        if (i == 0) {
+            System.out.println("one");
+            i = 1;
+            notifyAll();
         }
+        wait();
     }
 
-    public void second() {
-        synchronized (this) {
-            if (i == 1) {
-                System.out.println("two");
-                i = 2;
-            }
+    private synchronized void second() throws InterruptedException {
+        if (i == 1) {
+            System.out.println("two");
+            i = 2;
+            notifyAll();
         }
+        wait();
     }
 
-    public void third() {
-        synchronized (this) {
-            if (i == 2) {
-                System.out.println("three");
-                i = 0;
-            }
+    private synchronized void third() throws InterruptedException {
+        if (i == 2) {
+            System.out.println("three");
+            i = 0;
+            notifyAll();
         }
+        wait();
     }
 
     private static class PrintOne extends Thread {
@@ -43,7 +40,11 @@ public class PrintInOrder {
         @Override
         public void run() {
             while (true) {
-                object.first();
+                try {
+                    object.first();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
@@ -58,7 +59,11 @@ public class PrintInOrder {
         @Override
         public void run() {
             while (true) {
-                object.second();
+                try {
+                    object.second();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
@@ -73,7 +78,11 @@ public class PrintInOrder {
         @Override
         public void run() {
             while (true) {
-                object.third();
+                try {
+                    object.third();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
