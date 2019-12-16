@@ -1,6 +1,6 @@
 package xatu20191215;
 
-/*面试重点：synchronized(可以保证原子性、可见性、代码重排序性)、volatile(保证可见性)*/
+/*面试重点：synchronized(可以保证原子性、可见性、代码重排序性)、volatile(保证可见性、代码重排序性)*/
 public class PrintInOrder {
     private volatile int i = 0;
 
