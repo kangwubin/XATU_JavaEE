@@ -1,6 +1,7 @@
 package xatu20191216;
 
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Description:循环队列
@@ -19,13 +20,15 @@ public class ArrayQueue {
         if (size == array.length) {
             throw new RuntimeException("满了");
         }
+
         array[rear] = val;
         rear = (rear + 1) % array.length;
-        /*array[rear] = val;
-        rear++;
+        /*
+        array[rear++] = val;
         if (rear == array.length) {
             rear = 0;
-        }*/
+        }
+         */
         size++;
     }
 
@@ -33,6 +36,13 @@ public class ArrayQueue {
         if (size == 0) {
             throw new RuntimeException("空了");
         }
+
+        /*
+        int val = array[front++];
+        if (front == array.length) {
+            front = 0;
+        }
+        */
         int val = array[front];
         front = (front + 1) % array.length;
         size--;
@@ -47,19 +57,21 @@ public class ArrayQueue {
 
     private static class Producer extends Thread {
         Producer() {
-            super("生产者：");
+            super("生产者");
         }
 
         @Override
         public void run() {
             Random random = new Random(20191216);
             while (true) {
-                int val = random.nextInt();
-                queue.put(val);
+                int val = random.nextInt(100);
                 try {
-                    Thread.sleep(10);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    queue.put(val);
+                } catch (RuntimeException e) {
+                    try {
+                        TimeUnit.MILLISECONDS.sleep(10);
+                    } catch (InterruptedException ex) {
+                    }
                 }
             }
         }
@@ -67,17 +79,19 @@ public class ArrayQueue {
 
     private static class Customer extends Thread {
         Customer() {
-            super("消费者：");
+            super("消费者");
         }
 
         @Override
         public void run() {
             while (true) {
-                int val = queue.take();
                 try {
-                    Thread.sleep(10);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    int val = queue.take();
+                } catch (RuntimeException e) {
+                    try {
+                        TimeUnit.MILLISECONDS.sleep(10);
+                    } catch (InterruptedException ex) {
+                    }
                 }
             }
         }
