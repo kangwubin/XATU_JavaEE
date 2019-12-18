@@ -1,7 +1,7 @@
 package xatu20191215;
 
 /**
- * Description:
+ * Description:哲学家吃饭问题 
  *
  * @author: KangWuBin
  * @Date: 2019/12/15

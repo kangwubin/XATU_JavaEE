@@ -34,9 +34,11 @@ public class SyncAndState {
     }
 
     public static void main(String[] args) {
+        //一般而言，main方法就是主线程，其余的是子线程；
         SyncAndState object = new SyncAndState();
+        object.method();
         MyThread myThread = new MyThread(object, "我是子线程");
         myThread.start();
-        object.method();
+
     }
 }

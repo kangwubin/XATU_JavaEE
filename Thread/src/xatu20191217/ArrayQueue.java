@@ -18,7 +18,8 @@ public class ArrayQueue {
     private int rear = 0;
 
     /* synchronized：只锁size，性能更高；
-     * synchronized：锁整个方法，性能低；*/
+     * synchronized：锁整个方法，性能低；
+     * synchronized: 尽可能锁的东西少，性能更高；*/
     private void put(int val) {
         if (size == array.length) {
             throw new RuntimeException("满了");
@@ -27,6 +28,7 @@ public class ArrayQueue {
         array[rear] = val;
         rear = (rear + 1) % array.length;
         synchronized (this) {
+            /*生产者和消费者共享size，为了保证线程安全，需要给size加锁；*/
             size++;
         }
     }
@@ -38,6 +40,7 @@ public class ArrayQueue {
         int val = array[front];
         front = (front + 1) % array.length;
         synchronized (this) {
+            /*生产者和消费者共享size，为了保证线程安全，需要给size加锁；*/
             size--;
         }
         return val;
