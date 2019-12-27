@@ -1,0 +1,4 @@
+cat:喵喵
+dog:汪汪
+fish:小鱼儿
+wolf:狼人
