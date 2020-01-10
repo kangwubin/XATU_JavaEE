@@ -1,3 +1,5 @@
+package xatu_20200108;
+
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
@@ -9,7 +11,7 @@ import java.util.Scanner;
  * @Date: 2020/1/8
  * @Time: 11:01
  */
-public class BaiduClient {
+public class BitClient {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("45.40.254.164", 80);
         String request = "GET / HTTP/1.1\r\n" + "Host:www.bitedu.vip\r\n" + "\r\n";
