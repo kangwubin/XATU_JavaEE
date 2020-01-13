@@ -1,4 +1,4 @@
---drop table if exists  file_meta;
+drop table if exists  file_meta;
 
 CREATE TABLE IF NOT EXISTS file_meta (--创建文件信息表
     name VARCHAR(50) NOT NULL,

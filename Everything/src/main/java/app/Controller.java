@@ -13,6 +13,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Window;
+import task.DBInit;
+import task.FileOperatorTask;
 import task.FileScanCallback;
 import task.FileScanTask;
 
@@ -40,6 +42,8 @@ public class Controller implements Initializable {
     private Thread t;
 
     public void initialize(URL location, ResourceBundle resources) {
+        //数据库初始化
+        DBInit.init();
         // 添加搜索框监听器，内容改变时执行监听事件
         searchField.textProperty().addListener(new ChangeListener<String>() {
 
@@ -58,6 +62,8 @@ public class Controller implements Initializable {
             return;
         // 获取选择的目录路径，并显示
         String path = file.getPath();
+        //给按钮后设置显示路径信息
+        srcDirectory.setText(path);
         // TODO
         if (t != null) {
             t.interrupt();
@@ -65,19 +71,24 @@ public class Controller implements Initializable {
         t = new Thread(new Runnable() {
             @Override
             public void run() {
-                FileScanCallback callback = new FileOperatorDAO();
-                //
-                FileScanTask task = new FileScanTask(callback);
-                task.startScan(file);
-                //多线程运行文件扫描任务
-                task.waitFinish();
+                try {
+                    FileScanCallback callback = new FileOperatorTask();
+                    //
+                    FileScanTask task = new FileScanTask(callback);
+                    task.startScan(file);
+                    //多线程运行文件扫描任务
+                    task.waitFinish();
+                    System.out.println("执行完，src=" + srcDirectory.getText());
+                    freshTable();
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 //等待task结束，刷新任务
                 //task.wait();
-                freshTable();
             }
         });
         t.start();
-
         //System.out.println(path);
         //srcDirectory.setText(path);
     }
@@ -87,10 +98,11 @@ public class Controller implements Initializable {
         ObservableList<FileMeta> metas = fileTable.getItems();
         metas.clear();
         // TODO
-        List<FileMeta> datats = new ArrayList<>();
+        /*List<FileMeta> datats = new ArrayList<>();
         datats.add(new FileMeta("a", "D:/", 10496L, new Date().getTime(), true));
         datats.add(new FileMeta("b", "E:/", 1125698L, new Date().getTime(), true));
-        datats.add(new FileMeta("c", "F:/", 14785236L, new Date().getTime(), true));
+        datats.add(new FileMeta("c", "F:/", 14785236L, new Date().getTime(), true));*/
+        List<FileMeta> datats = FileOperatorDAO.search(srcDirectory.getText(), searchField.getText());
         metas.addAll(datats);
     }
 }

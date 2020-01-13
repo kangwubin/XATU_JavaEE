@@ -2,6 +2,9 @@ package app;
 
 import util.Util;
 
+import java.io.File;
+import java.util.Objects;
+
 /**
  * Description:
  *
@@ -28,6 +31,37 @@ public class FileMeta {
         this.isDirectory = isDirectory;
         this.sizeText = Util.parseSize(size);
         this.lastModifiedText = Util.parseDate(lastModified);
+    }
+
+    public FileMeta(File child) {
+        this(child.getName(), child.getParent(), child.length(), child.lastModified(), child.isDirectory());
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        FileMeta meta = (FileMeta) o;
+        return Objects.equals(name, meta.name) &&
+                Objects.equals(path, meta.path) &&
+                Objects.equals(isDirectory, meta.isDirectory);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(name, path, isDirectory);
+    }
+
+    @Override
+    public String toString() {
+        return "FileMeta{" +
+                "name='" + name + '\'' +
+                ", path='" + path + '\'' +
+                ", size=" + size +
+                ", lastModified=" + lastModified +
+                ", isDirectory=" + isDirectory +
+                '}';
     }
 
     public String getName() {

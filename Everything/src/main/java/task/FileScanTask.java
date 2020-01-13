@@ -14,13 +14,18 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @Time: 9:06
  */
 public class FileScanTask {
-    private static final ExecutorService POOL
+    /*private static final ExecutorService POOL
             = Executors.newFixedThreadPool(4);//固定大小的线程池
-    //    private static volatile int COUNT;//记录运行的线程数
+    //    private static volatile int COUNT;//记录运行的线程数*/
 
-    private static AtomicInteger COUNT = new AtomicInteger();
+    private final ExecutorService pool
+            = Executors.newFixedThreadPool(4);//固定大小的线程池
 
-    private static CountDownLatch LATCH = new CountDownLatch(1);
+//    private static AtomicInteger COUNT = new AtomicInteger();
+    private final AtomicInteger count = new AtomicInteger();
+
+//    private static CountDownLatch LATCH = new CountDownLatch(1);
+    private final CountDownLatch latch = new CountDownLatch(1);
 
     private FileScanCallback callback;
 
@@ -33,10 +38,10 @@ public class FileScanTask {
        /* synchronized (this) {
             COUNT++;
         }*/
-        COUNT.incrementAndGet();
+        count.incrementAndGet();
         //root = new File("F:\\PycharmProjects");
         // list(root);
-        POOL.execute(new Runnable() {
+        pool.execute(new Runnable() {
             @Override
             public void run() {
                 list(root);
@@ -44,7 +49,7 @@ public class FileScanTask {
         });
     }
 
-    public void waitFinish() {
+    public void waitFinish() throws InterruptedException {
        /* synchronized (this) {
             try {
                 this.wait();
@@ -53,10 +58,10 @@ public class FileScanTask {
             }
         }*/
         try {
-            LATCH.await();
-        } catch (InterruptedException e) {
+            latch.await();
+        } finally {
             //中断所以线程池
-            POOL.shutdown();        //调用每个线程稍微interrupted
+            pool.shutdown();        //调用每个线程稍微interrupted
             //POOL.shutdownNow();     //调用每个线程stop关闭
         }
     }
@@ -79,14 +84,14 @@ public class FileScanTask {
                            /* synchronized (this) {
                                 COUNT++;
                             }*/
-                                COUNT.incrementAndGet();
+                                count.incrementAndGet();
                         /*new Thread(new Runnable() {
                             @Override
                             public void run() {
                                 list(child);
                             }
                         }).start();*/
-                                POOL.execute(new Runnable() {
+                                pool.execute(new Runnable() {
                                     @Override
                                     public void run() {
                                         list(child);
@@ -108,9 +113,9 @@ public class FileScanTask {
                 }
             }*/
                 //所有线程执行完毕
-                if (COUNT.decrementAndGet() == 0) {
+                if (count.decrementAndGet() == 0) {
                     //通知
-                    LATCH.countDown();
+                    latch.countDown();
                 }
             }
         }
