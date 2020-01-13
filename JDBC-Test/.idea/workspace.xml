@@ -328,7 +328,7 @@
       <workItem from="1575728774939" duration="665000" />
       <workItem from="1575897591108" duration="183000" />
       <workItem from="1578845324585" duration="248000" />
-      <workItem from="1578904079630" duration="708000" />
+      <workItem from="1578904079630" duration="788000" />
     </task>
     <task id="LOCAL-00001" summary="JDBC链接数据代码">
       <created>1574773965410</created>
@@ -365,11 +365,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575729403213</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="JDBC数据库连接代码的复用设计与多表联合查询">
+      <created>1578904804636</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578904804636</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79577000" />
+    <option name="totallyTimeSpent" value="79657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
