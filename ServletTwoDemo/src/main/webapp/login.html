@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/login.css"/>
+</head>
+<body class="text-center">
+<form class="form-signin" method="post" action="/login">
+    <!--img class="mb-4" src="/icons/bootstrap-solid.svg" alt="" width="72" height="72" -->
+    <h1 class="h3 mb-3 font-weight-normal">请登录</h1>
+    <label for="username" class="sr-only">用户名: </label>
+    <!--label for="username" ==  input name="username" == req.getParameter("username");-->
+    <input type="text" name="username" id="username" class="form-control" placeholder="请填写用户名" required="" autofocus="">
+    <label for="password" class="sr-only">密码</label>
+    <input type="password" name="password" id="password" class="form-control" placeholder="请填写密码" required="">
+    <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+</form>
+</body>
+</html>
