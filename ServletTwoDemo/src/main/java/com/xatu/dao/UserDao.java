@@ -3,6 +3,7 @@ package com.xatu.dao;
 import com.xatu.model.User;
 import com.xatu.util.Database;
 
+import java.security.MessageDigest;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +16,8 @@ import java.util.List;
  * @Time: 10:11
  */
 public class UserDao {
+    private static String secret = "朕就是皇上";
+
     public User registerUser(String username, String nickname, String password) throws SQLException {
         String sql = "INSERT INTO users (username, nickname, password) VALUES (?, ?, ?)";
 
@@ -75,5 +78,24 @@ public class UserDao {
             connection.close();
         }
         */
+    }
+
+    //给密码做摘要
+    private String encrypted(String password) {
+        password = password + secret;
+        try {
+            MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+            byte[] input = password.getBytes("UTF-8");
+            byte[] output = messageDigest.digest(input);
+            StringBuilder sb = new StringBuilder();
+            for (byte b : output) {
+                sb.append(String.format("%02x", b));
+            }
+            return sb.toString();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "";
+        }
     }
 }
