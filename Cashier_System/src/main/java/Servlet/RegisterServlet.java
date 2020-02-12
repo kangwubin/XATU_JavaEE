@@ -2,7 +2,6 @@ package Servlet;
 
 import util.DBUtil;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -28,8 +27,8 @@ public class RegisterServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
 
-        System.out.println("username:"+username);
-        System.out.println("password:"+password);
+        System.out.println("username:" + username);
+        System.out.println("password:" + password);
 
         Connection connection = null;
         PreparedStatement preparedStatement = null;
@@ -41,8 +40,12 @@ public class RegisterServlet extends HttpServlet {
             preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, password);
-            preparedStatement.executeUpdate();
-            resp.sendRedirect("login.html");
+
+            int ret = preparedStatement.executeUpdate();
+            //注册成功后的判断，是否跳转到登录界面
+            if (ret == 1) {
+                resp.sendRedirect("login.html");
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {

@@ -7,10 +7,59 @@
     <link rel="stylesheet" href="css/Site.css"/>
     <link rel="stylesheet" href="css/zy.all.css"/>
     <link rel="stylesheet" href="css/amazeui.min.css"/>
-    <script src = "js/jquery-1.7.2.min.js"> </script>
+    <script src="js/jquery-1.7.2.min.js"></script>
     <!--js代码 要被执行 需要导入上面的库-->
     <script>
-    
+        $(function () {
+            $.ajax({
+                url: "GoodsBrowse",
+                type: "get",
+                dataType: "json",
+                //后台执行成功后，执行此函数
+                success: function (data) {
+                    console.log(data);
+                    console.log(data.length);
+                    var s = "";
+                    for (var i = 0; i < data.length; i++) {
+                        s += "<tr>";
+                        s += "<td>" + data[i].id + "</td>>";
+                        s += "<td>" + data[i].name + "</td>>";
+                        s += "<td>" + data[i].introduce + "</td>>";
+                        s += "<td>" + data[i].stock + "</td>>";
+                        s += "<td>" + data[i].unit + "</td>>";
+                        s += "<td>" + data[i].price + "</td>>";
+                        s += "<td>" + data[i].discount + "</td>>";
+                        s += "<td class=\"delete\"><button onclick=\"deleteInfo('" + data[i].id + "')\" >" +
+                            "<i class=\"icon-trash bigger-120\"></i>下架</button></td>";
+                        s += "</tr>";
+                    }
+                    $("#tbRecord>tbody").html(s);
+                }
+            });
+        });
+
+        //下架商品
+        function deleteInfo(obj) {
+            console.log(obj);
+            if (obj != null) {
+                $.ajax({
+                    url: "deleteGoods",
+                    //async: true,
+                    type: "post",
+                    //设置需要请求的参数类型
+                    data: {"id": obj},
+                    success: function (data) {
+                        alert("删除成功！");
+                        // 删除成功后刷新页面
+                        window.location.reload();
+                    },
+                    error: function () {
+                        alert("请求失败");
+                    },
+                    dataType: "text"
+                });
+            }
+        }
     </script>
 
 </head>
@@ -45,26 +94,7 @@
                                 </thead>
 
                                 <tbody>
-                                    <tr>
-                                        <td> 1 </td>
-                                        <td> 肉肉 </td>
-                                        <td> 猪猪 </td>
-                                        <td> 2 </td>
-                                        <td> 斤 </td>
-                                        <td> 10 </td>
-                                        <td> 80折 </td>
-                                        <td> 下架 </td>
-                                    </tr>
-                                    <tr>
-                                        <td> 2 </td>
-                                        <td> 肉肉 </td>
-                                        <td> 兔兔 </td>
-                                        <td> 3 </td>
-                                        <td> 斤 </td>
-                                        <td> 56 </td>
-                                        <td> 99折 </td>
-                                        <td> 下架 </td>
-                                    </tr>
+
                                 </tbody>
 
                             </table>

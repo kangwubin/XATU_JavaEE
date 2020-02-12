@@ -29,7 +29,11 @@ public class GoodsPutAwayServlet extends HttpServlet {
         String introduce = req.getParameter("introduce");
         int stock = Integer.parseInt(req.getParameter("stock"));
         String unit = req.getParameter("unit");
-        int price = Integer.parseInt(req.getParameter("price"));
+
+        String price = req.getParameter("price");
+        double doublePrice = Double.valueOf(price);
+        int realPrice = new Double(doublePrice * 100).intValue();
+
         int discount = Integer.parseInt(req.getParameter("discount"));
 
         Connection connection = null;
@@ -45,10 +49,13 @@ public class GoodsPutAwayServlet extends HttpServlet {
             preparedStatement.setString(2, introduce);
             preparedStatement.setInt(3, stock);
             preparedStatement.setString(4, unit);
-            preparedStatement.setInt(5, price);
+            preparedStatement.setInt(5, realPrice);
             preparedStatement.setInt(6, discount);
-            preparedStatement.executeUpdate();
-            resp.sendRedirect("index.html");
+
+            int ret = preparedStatement.executeUpdate();
+            if (ret == 1) {
+                resp.sendRedirect("index.html");
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
