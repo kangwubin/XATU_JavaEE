@@ -31,6 +31,8 @@
                         s += "<td>" + data[i].discount + "</td>>";
                         s += "<td class=\"delete\"><button onclick=\"deleteInfo('" + data[i].id + "')\" >" +
                             "<i class=\"icon-trash bigger-120\"></i>下架</button></td>";
+                        s += "<td class=\"delete\"><button onclick=\"updateInfo('" + data[i].id + "')\" >" +
+                            "<i class=\"icon-trash bigger-120\"></i>更新</button></td>";
                         s += "</tr>";
                     }
                     $("#tbRecord>tbody").html(s);
@@ -60,6 +62,16 @@
                 });
             }
         }
+
+        // 更新商品----待完成
+        function updateInfo(obj) {
+            if (obj != null) {
+                $.ajax({
+                    url: "updategoods.html",
+                    type: "post"
+                });
+            }
+        }
     </script>
 
 </head>
@@ -71,6 +83,14 @@
             <div class="hd">
                 <ul>
                     <li class="on" style="box-sizing: initial;-webkit-box-sizing: initial;">浏览商品</li>
+                    <li class="on" style="box-sizing: initial;-webkit-box-sizing: initial;"><a
+                            href="inbound.html">上架商品</a></li>
+                    <li class="on" style="box-sizing: initial;-webkit-box-sizing: initial;"><a href="updategoods.html">更新商品信息</a>
+                    </li>
+                    <li class="on" style="box-sizing: initial;-webkit-box-sizing: initial;"><a href="orderBrowse.html">浏览订单</a>
+                    </li>
+                    <li class="on" style="box-sizing: initial;-webkit-box-sizing: initial;"><a href="pay.html">购买商品</a>
+                    </li>
                 </ul>
             </div>
             <div class="bd">
@@ -90,6 +110,7 @@
                                     <th>商品价格(元)</th>
                                     <th>商品折扣</th>
                                     <th>下架商品</th>
+                                    <th>更新商品</th>
                                 </tr>
                                 </thead>
 

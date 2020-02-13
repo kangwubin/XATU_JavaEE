@@ -80,7 +80,7 @@ public class GoodsUpdateServlet extends HttpServlet {
             preparedStatement.setString(2, goods.getIntroduce());
             preparedStatement.setInt(3, goods.getStock());
             preparedStatement.setString(4, goods.getUnit());
-            preparedStatement.setInt(5, goods.getPrice());
+            preparedStatement.setInt(5, goods.getPriceInt());
             preparedStatement.setInt(6, goods.getDiscount());
             preparedStatement.setInt(7, goods.getId());
 
