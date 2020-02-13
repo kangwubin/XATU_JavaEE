@@ -30,7 +30,7 @@ public class GoodsBrowseServlet extends HttpServlet {
         System.out.println("GoodsBrowseServlet");
 
         req.setCharacterEncoding("UTF-8");
-        resp.setContentType("text/html: charset=UTF-8");
+        resp.setContentType("text/html; charset=UTF-8");
         resp.setCharacterEncoding("UTF-8");
 
         Connection connection = null;

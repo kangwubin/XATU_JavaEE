@@ -26,7 +26,7 @@ public class DelGoodsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         System.out.println("DelGoodsServlet");
         req.setCharacterEncoding("UTF-8");
-        resp.setContentType("text/html: charset=UTF-8");
+        resp.setContentType("text/html; charset=UTF-8");
         resp.setCharacterEncoding("UTF-8");
 
         String goodsId = req.getParameter("id");
