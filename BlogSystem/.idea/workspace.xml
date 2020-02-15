@@ -7,37 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaee073e-28fd-4027-a1ab-06ff16d5b587" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/buyGoodsSuccess.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/Site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/amazeui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/zy.all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/zy.form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/zy.layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/zy.menu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/zy.pageRecord.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/zy.table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/css/zy.tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/goodsbrowse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/inbound.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/js/_layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/js/jquery-1.7.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/js/plugs/JqueryMD5_DinJonYa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/js/plugs/JquerySQLDateToDate_DinJonYa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/js/plugs/Jqueryplugs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/js/plugs/jquery.SuperSlide.source.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/orderBrowse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/pay.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Cashier_System/src/main/webapp/updategoods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cashier_System/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cashier_System/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cashier_System/.idea/dataSources/131f26da-d023-43ac-a007-6403ff7378ef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cashier_System/.idea/dataSources/131f26da-d023-43ac-a007-6403ff7378ef.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -87,20 +57,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="250">
+              <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state relative-caret-position="175">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-386">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -197,9 +176,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,6 +229,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,7 +237,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cashier_System" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -477,7 +456,8 @@
       <workItem from="1581327190105" duration="224000" />
       <workItem from="1581327777975" duration="799000" />
       <workItem from="1581345412903" duration="1239000" />
-      <workItem from="1581347182015" duration="64000" />
+      <workItem from="1581347182015" duration="277000" />
+      <workItem from="1581347579048" duration="714000" />
     </task>
     <task id="LOCAL-00001" summary="HTML+Servlet+Tomact+Mysql实现个人博客系统&#10;1.注册&#10;2.登录&#10;3.发布文章&#10;4.评论文章">
       <created>1580439353856</created>
@@ -507,40 +487,47 @@
       <option name="project" value="LOCAL" />
       <updated>1581238011866</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="HTML+Servlet+Tomact+Mysql实现个人博客系统&#10;1.注册&#10;2.登录&#10;3.发布文章&#10;4.评论文章">
+      <created>1581347426721</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581347426721</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33491000" />
+    <option name="totallyTimeSpent" value="34418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="8" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.3286908" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.19436997" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.19436997" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30543932" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18096514" />
-      <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.21782842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3286908" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30543932" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18297587" />
+      <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3286908" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32729805" />
@@ -561,13 +548,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="HTML+Servlet+Tomact+Mysql实现个人博客系统&#10;1.注册&#10;2.登录&#10;3.发布文章&#10;4.评论文章" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xatu/dao/ArticleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -892,17 +872,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/register.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="175">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        <state relative-caret-position="-386">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
         </state>
       </provider>
     </entry>
