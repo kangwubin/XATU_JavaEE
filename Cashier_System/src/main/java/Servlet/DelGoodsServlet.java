@@ -14,7 +14,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Description:
+ * Description:下架商品
  *
  * @author: KangWuBin
  * @Date: 2020/2/12

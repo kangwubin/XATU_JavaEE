@@ -110,7 +110,7 @@ public class ReadyBuyServlet extends HttpServlet {
         resp.getWriter().println("<html>");
         resp.getWriter().println("<p>" + "【用户名称】:" + order.getAccount_name() + "</p>");
         resp.getWriter().println("<p>" + "【订单编号】:" + order.getId() + "</p>");
-        resp.getWriter().println("<p>" + "【订单状态】:" + order.getOrder_status().getDesc() + "</p>");
+        resp.getWriter().println("<p>" + "【订单状态】:" + order.getOrder_statusDesc() + "</p>");
         resp.getWriter().println("<p>" + "【创建时间】:" + order.getCreate_time() + "</p>");
         resp.getWriter().println("<p>" + "编号 " + "名称 " + "数量 " + "单位 " + "单价（元） " + "</p>");
 

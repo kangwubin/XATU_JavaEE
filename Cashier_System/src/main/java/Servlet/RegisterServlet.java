@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.sql.*;
 
 /**
- * Description:
+ * Description:注册
  *
  * @author: KangWuBin
  * @Date: 2020/2/11

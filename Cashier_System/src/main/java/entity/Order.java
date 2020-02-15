@@ -49,4 +49,13 @@ public class Order {
     public double getDiscount() {
         return (this.getTotalMoneyInt() - this.getActualAmountInt()) * 1.00 / 100;
     }
+
+    public OrderStatus getOrder_statusDesc(){
+        return order_status;
+    }
+
+//浏览订单
+    public String getOrder_status() {
+        return order_status.getDesc();
+    }
 }

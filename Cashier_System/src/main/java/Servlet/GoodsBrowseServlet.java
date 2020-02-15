@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Description:
+ * Description:浏览商品
  *
  * @author: KangWuBin
  * @Date: 2020/2/12

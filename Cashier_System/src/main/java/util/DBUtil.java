@@ -1,7 +1,6 @@
 package util;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
-import lombok.Data;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -10,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 /**
- * Description:
+ * Description:数据库连接类
  *
  * @author: KangWuBin
  * @Date: 2020/2/9
@@ -22,6 +21,7 @@ public class DBUtil {
     private static final String PASSWORD = "123456";
     private static volatile DataSource DATASOURCE;
 
+    //单例模式连接数据库
     private static DataSource getDATASOURCE() {
         if (DATASOURCE == null) {
             synchronized (DBUtil.class) {

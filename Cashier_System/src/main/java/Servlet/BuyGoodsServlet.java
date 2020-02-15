@@ -21,7 +21,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 /**
- * Description:
+ * Description:购买商品
  *
  * @author: KangWuBin
  * @Date: 2020/2/13
@@ -83,7 +83,7 @@ public class BuyGoodsServlet extends HttpServlet {
             preparedStatement.setInt(2, order.getAccount_id());
             preparedStatement.setInt(3, order.getActualAmountInt());
             preparedStatement.setInt(4, order.getTotalMoneyInt());
-            preparedStatement.setInt(5, order.getOrder_status().getFlg());
+            preparedStatement.setInt(5, order.getOrder_statusDesc().getFlg());
             preparedStatement.setString(6, order.getAccount_name());
 
             if (preparedStatement.executeUpdate() == 0) {
