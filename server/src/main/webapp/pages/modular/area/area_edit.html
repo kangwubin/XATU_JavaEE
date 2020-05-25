@@ -1,0 +1,27 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/area/area_edit.js"]}){
+<form id="areaForm" lay-filter="areaForm" class="layui-form model-form">
+    <input name="id" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">区域名称<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="areaName" name="areaName" placeholder="请输入区域名称" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">大气情况<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="daqi" name="daqi" placeholder="请输入大气情况" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">降水情况<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="jiangshui" name="jiangshui" placeholder="请输入降水情况" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

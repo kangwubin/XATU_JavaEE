@@ -1,0 +1,74 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/ground/ground_edit.js"]}){
+<form id="groundForm" lay-filter="groundForm" class="layui-form model-form">
+    <input name="id" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">农田编号<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="code" name="code" placeholder="请输入农田编号" type="text" class="layui-input"
+                   lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">长<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="chang" name="chang" placeholder="请输入长" type="text" class="layui-input"
+                   lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">宽<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="kuan" name="kuan" placeholder="请输入宽" type="text" class="layui-input"
+                   lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">面积<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="mianji" name="mianji" placeholder="请输入面积" type="text" class="layui-input"
+                   lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">经纬度<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="mapLaction" name="mapLaction" placeholder="请输入经纬度" type="text"
+                   class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">海拔<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="haiba" name="haiba" placeholder="请输入海拔" type="text" class="layui-input"
+                   lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">土质<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="tuzhi" name="tuzhi" placeholder="请输入土质" type="text" class="layui-input"
+                   lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"></label>选择区域 <input
+            id="quyuSelectHidden" name="areaId" type="hidden"
+            class="layui-input"/>
+        <div class="layui-input-block" id="quyuSelect"
+             lay-filter="quyuSelect"></div>
+
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"></label>选择种植户 <input
+            id="multiSelectHidden" name="userId" type="hidden"
+            class="layui-input"/>
+        <div class="layui-input-block" id="multiSelect"
+             lay-filter="multiSelect"></div>
+
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}

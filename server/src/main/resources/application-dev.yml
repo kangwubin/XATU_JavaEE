@@ -1,0 +1,30 @@
+# Mysql数据库
+server:
+  port: 9096
+  max-http-header-size: 10240
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-8vbq6j790seykrt37lo.mysql.zhangbei.rds.aliyuncs.com:3306/wai_zhongzhi?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    username: demo
+    password: Xgx890514
+    filters: wall,mergeStat
+    data-source-name: lost
+
+# 多数据源情况的配置
+guns:
+
+  swagger-open: true                #是否开启swagger (true/false)
+  kaptcha-open: false               #是否开启登录时验证码 (true/false)
+  spring-session-open: false        #是否开启spring session,如果是多机环境需要开启(true/false)
+  session-invalidate-time: 1800     #session失效时间(只在单机环境下生效，多机环境在SpringSessionConfig类中配置) 单位：秒
+  session-validation-interval: 900  #多久检测一次失效的session(只在单机环境下生效) 单位：秒
+  serverUploadPath: http://221.176.209.130:9093/assets/upload/
+  fileUploadPath: D:/data
+
+
+  # 邮件发送配置（改为自己的账号和密码）
+
+# 阿里云短信发送配置
+

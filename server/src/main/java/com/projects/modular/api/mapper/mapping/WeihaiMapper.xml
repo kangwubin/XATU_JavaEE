@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.projects.modular.api.mapper.WeihaiMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.projects.modular.api.entity.Weihai">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="time" property="time" />
+        <result column="buwei" property="buwei" />
+        <result column="zhengzhuang" property="zhengzhuang" />
+        <result column="sunshi" property="sunshi" />
+        <result column="yao_name" property="yaoName" />
+        <result column="yao_flat" property="yaoFlat" />
+        <result column="yao_method" property="yaoMethod" />
+        <result column="yao_time" property="yaoTime" />
+        <result column="yao_xiaoguo" property="yaoXiaoguo" />
+        <result column="user_id" property="userId" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id AS "id", name AS "name", time AS "time", buwei AS "buwei", zhengzhuang AS "zhengzhuang", sunshi AS "sunshi", yao_name AS "yaoName", yao_flat AS "yaoFlat", yao_method AS "yaoMethod", yao_time AS "yaoTime", yao_xiaoguo AS "yaoXiaoguo", user_id AS "userId", create_time AS "createTime"
+    </sql>
+
+</mapper>

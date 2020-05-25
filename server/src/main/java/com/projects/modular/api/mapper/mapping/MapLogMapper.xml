@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.projects.modular.api.mapper.MapLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.projects.modular.api.entity.MapLog">
+        <id column="id" property="id" />
+        <result column="indexId" property="indexId" />
+        <result column="latitude" property="latitude" />
+        <result column="longitude" property="longitude" />
+        <result column="speed" property="speed" />
+        <result column="direction" property="direction" />
+        <result column="accuracy" property="accuracy" />
+        <result column="satellitesNum" property="satellitesNum" />
+        <result column="address" property="address" />
+        <result column="city" property="city" />
+        <result column="time" property="time" />
+        <result column="device_id" property="deviceId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id AS "id", indexId AS "indexId", latitude AS "latitude", longitude AS "longitude", speed AS "speed", direction AS "direction", accuracy AS "accuracy", satellitesNum AS "satellitesNum", address AS "address", city AS "city", time AS "time", device_id AS "deviceId"
+    </sql>
+
+</mapper>

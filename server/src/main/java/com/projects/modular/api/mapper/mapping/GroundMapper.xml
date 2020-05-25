@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.projects.modular.api.mapper.GroundMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.projects.modular.api.entity.Ground">
+        <id column="id" property="id" />
+        <result column="code" property="code" />
+        <result column="area_id" property="areaId" />
+        <result column="chang" property="chang" />
+        <result column="kuan" property="kuan" />
+        <result column="mianji" property="mianji" />
+        <result column="map_laction" property="mapLaction" />
+        <result column="haiba" property="haiba" />
+        <result column="tuzhi" property="tuzhi" />
+        <result column="create_time" property="createTime" />
+        <result column="user_id" property="userId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id AS "id", code AS "code", area_id AS "areaId", chang AS "chang", kuan AS "kuan", mianji AS "mianji", map_laction AS "mapLaction", haiba AS "haiba", tuzhi AS "tuzhi", create_time AS "createTime", user_id AS "userId"
+    </sql>
+
+</mapper>

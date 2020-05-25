@@ -1,0 +1,75 @@
+@layout("/common/_container.html",{bg:"bg-white",js:["/assets/modular/mapLog/mapLog_edit.js"]}){
+<form id="mapLogForm" lay-filter="mapLogForm" class="layui-form model-form">
+    <input name="id" type="hidden"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">编号<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="indexId" name="indexId" placeholder="请输入编号" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">经度<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="latitude" name="latitude" placeholder="请输入经度" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">纬度<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="longitude" name="longitude" placeholder="请输入纬度" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">速度<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="speed" name="speed" placeholder="请输入速度" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="direction" name="direction" placeholder="请输入" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="accuracy" name="accuracy" placeholder="请输入" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="satellitesNum" name="satellitesNum" placeholder="请输入" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">地址<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="address" name="address" placeholder="请输入地址" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">城市<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="city" name="city" placeholder="请输入城市" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="time" name="time" placeholder="请输入" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">设备编号<span style="color: red;">*</span></label>
+        <div class="layui-input-block">
+            <input id="deviceId" name="deviceId" placeholder="请输入设备编号" type="text" class="layui-input" lay-verify="required" required/>
+        </div>
+    </div>
+    <div class="layui-form-item text-right">
+        <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>保存</button>
+    </div>
+</form>
+@}
